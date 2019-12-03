@@ -1,0 +1,45 @@
+div{ 
+     /* <!-- embeded styles--> */
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;   
+}
+head{
+    width: 200px;
+      
+      border: 1px green;
+      
+}
+main{
+      width: 200px;
+      height: 200px;
+      border: 1px green;
+      margin: 10px auto
+}
+body{
+    width: 200px;
+      height: 200px;
+      border: 1px green;
+      margin: 10px auto
+}
+foot{
+    width: 200px;
+      height: 200px;
+      border: 1px green;
+      margin: 10px auto
+}
+div#head{
+      width: 90%;
+      height: 100px;
+      border: 1px green;
+      margin: 10px auto
+       
+}
+div#main{
+    }
+div#body{
+
+}
+div#foot{
+    
+}
