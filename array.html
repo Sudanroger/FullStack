@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var users = ["Ramesh","Ram","Kiran","Ravi"];
+    users[4] = "Raja";
+    users.push("Rani"); // add value to end of array
+    users.unshift("Somu"); // add value to the begining of array
+    users.sort();// sort in alphabatical order
+    users.pop(); // remove the last element
+    users.splice(1,0,"Manthri"); // the index position 1 we need to add a element and without removing the existing element so type 0. if need to remove type 1. providing a name will add the element
+    users.splice(2,1); //  to remove the element and total number of elements need to be removed is 1. if second value is not provided it will delete all the elements after the index 2
+    // document.write(users[0]+"<br>");
+    // document.write(users[1]+"<br>");
+    // document.write(users[2]+"<br>");
+    // document.write(users[3]+"<br>");
+    
+    for (i=0;i<users.length;i++){
+        document.write(users[i]+"<br>");
+        console.log(users[i]);
+    }
+    for(i=1;i<=10;i++){
+        document.write(i+"<br>");
+    }
+    </script>
+    
+</body>
+</html>
