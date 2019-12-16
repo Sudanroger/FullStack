@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="top" onclick=addAtStart()>click to add at top</button>
+    <button id="erase" onclick=erase()>click to erase</button>
+    <!-- <button id="end" onclick=addAtEnd()>click to add at end</button> -->
+    
+    <div id="demo"></div>
+        <script>
+            
+                var users = ["Ramesh","Ram","Kiran","Ravi"];
+                function displayusers(){
+                    var results = "";
+                for (i=0;i<users.length;i++){
+                    results = results + users[i] + "<br>"   
+                }
+                    document.getElementById("demo").innerHTML=results;
+
+                }
+                
+            function addAtStart(){
+                users.unshift("Raghu");
+                displayusers();
+            }    
+            function addAtEnd(){
+                users.push("Veena");
+                displayusers();
+            }
+            function erase(){
+                users = [];
+                // users.splice(0);
+                displayusers();
+            }
+
+            displayusers();
+        </script>
+        <button id="end" onclick=addAtEnd()>click to add at end</button>
+    
+</body>
+</html>

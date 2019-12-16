@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var person = {
+        fname:"Sudan",
+        lname:"sadha",
+        work:"software",
+        office:"Electronic City"
+    };
+        person.native="TN"; 
+        person["country"]="India"
+    document.write(person.fname);
+    document.write("<br>");
+    document.write(person["office"]);
+    document.write("<br>");
+    document.write(person.native);
+    document.write("<br>");
+    console.log(person.lname);
+    console.log(person["work"]);
+    console.log(person.country);
+
+    for (a in person){
+        document.write(a)
+    }
+    </script>
+    
+</body>
+</html>

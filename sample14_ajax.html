@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getData()">Get Data</button>
+    <script>
+      function getData() {
+        var getInfo = new XMLHttpRequest();
+        getInfo.onreadystatechange = function() {
+          if (getInfo.readyState == 4 && getInfo.status == 200) {
+            console.log(getInfo.response);
+          }
+        };
+        getInfo.open("GET", "https://jsonplaceholder.typicode.com/users");
+        getInfo.send();
+      }
+    </script>
+  </body>
+</html>

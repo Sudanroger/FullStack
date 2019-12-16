@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="fname">First name</label>
+        <input type="text"  id="fname"/><br>
+        <label for="email">email: </label>
+        <input type="email" id="email"/><br>
+        <label for="Sassword">password</label>
+        <input type="password" id = "Sassword"/>
+        <button onclick="Registeruser()">Register</button>
+
+    </form>
+    <script>
+    function Registeruser(){
+        var user = {
+            fname:"",
+            email:"",
+            Sassword:""
+        };
+        user.fname=document.getElementById("fname").value;
+        user.email=document.getElementById("email").value;
+        user.password=document.getElementById("Sassword").value;
+
+        // user.fname = document.getElementsByTagName("input")[0].value;
+        // user.email = document.getElementsByTagName("input")[1].value;
+        // user.password = document.getElementsByTagName("input")[2].value;
+
+        console.log(user);
+    }
+    </script>
+</body>
+</html>
